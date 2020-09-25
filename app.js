@@ -21,8 +21,11 @@ const app = Vue.createApp({
     }, 
     confirmedInput(){
       this.confirmedName=this.name;
+    }, 
+    alert(){
+      alert("Submitted");
     }
   }
 });
 
-app.mount('#events');
+app.mount('#assignment');
