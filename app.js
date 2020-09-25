@@ -3,7 +3,8 @@ const app = Vue.createApp({
     return {
       counter: 10,
       name:'', 
-      confirmedName:''
+      confirmedName:'', 
+      outputText:''
     };
   },
   methods:{
@@ -24,6 +25,9 @@ const app = Vue.createApp({
     }, 
     alert(){
       alert("Submitted");
+    }, 
+    updateOutput(event){
+      this.outputText = event.target.value;
     }
   }
 });
